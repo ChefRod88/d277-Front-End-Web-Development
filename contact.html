@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="capital.html">Tallahassee</a></li>
+                <li><a href="orlando.html">Orlando</a></li>
+                <li><a href="miami.html">Miami</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form id="contact-form" action="/submit-form" method="POST">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="confirm-email">Confirm Email:</label>
+            <input type="email" id="confirm-email" name="confirm-email" required>
+            
+            <label for="question">Your Question:</label>
+            <textarea id="question" name="question" rows="4" required></textarea>
+            
+            <button type="submit" id="submit">Submit</button>
+        </form>
+        <aside>
+            <h3>Quick Links About Florida</h3>
+            <ul>
+                <li><a href="https://www.visitflorida.com/" target="_blank" rel="noopener noreferrer">Visit Florida Official Site</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Florida" target="_blank" rel="noopener noreferrer">Florida on Wikipedia</a></li>
+                <li><a href="https://www.floridastateparks.org/" target="_blank" rel="noopener noreferrer">Florida State Parks</a></li>
+            </ul>
+        </aside>
+    </main>
+    
+    <script src="scripts.js"></script>
+</body>
+<footer>
+    <p>© 2024 Discover Florida</p>
+</footer>
+</html>
